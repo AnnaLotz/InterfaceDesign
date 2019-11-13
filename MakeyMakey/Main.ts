@@ -2,9 +2,9 @@ namespace MakeyMakey {
     document.addEventListener("DOMContentLoaded", handleLoad);
     document.addEventListener("keydown", handleKeyDown);
 
-
     function handleLoad(): void {
-        console.log("Hello World");
+        console.log("Hallo Herr Krach, ich bin eine Konsolenausgabe :)");
+        alert("Plug in a MakeyMakey or press W A S D F G to change colors");
     }
 
 
@@ -36,13 +36,14 @@ namespace MakeyMakey {
                 console.log("G");
                 changeColor("six");
                 break;
+            default:
+                break;
 
         }
     } //handleKeyDown zu
 
     function changeColor(_color: string): void {
         document.getElementsByTagName("body")[0].id = (_color);
-
     }
 
 } //clos enamespace

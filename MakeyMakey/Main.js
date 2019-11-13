@@ -3,7 +3,8 @@ var MakeyMakey;
     document.addEventListener("DOMContentLoaded", handleLoad);
     document.addEventListener("keydown", handleKeyDown);
     function handleLoad() {
-        console.log("Hello World");
+        console.log("Hallo Herr Krach, ich bin eine Konsolenausgabe :)");
+        alert("Plug in a MakeyMakey or press W A S D F G to change colors");
     }
     function handleKeyDown(_event) {
         switch (_event.keyCode) {
@@ -30,6 +31,8 @@ var MakeyMakey;
             case 71:
                 console.log("G");
                 changeColor("six");
+                break;
+            default:
                 break;
         }
     } //handleKeyDown zu
